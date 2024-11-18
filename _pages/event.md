@@ -214,6 +214,16 @@ body {
                             <h6> {{ speaker.name }}</h6>
                             <p class="text-muted"> {{ speaker.affiliation }}</p>
                         </div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ forloop.index }}" aria-expanded="false" aria-controls="collapse{{ forloop.index }}">
+                            More Info
+                        </button>
+                        <div class="collapse" id="collapse{{ forloop.index }}">
+                            <div class="card card-body mt-3">
+                                <p>{{ speaker.bio }}</p>
+                                <h6>{{ speaker.title }}</h6>
+                                <p>{{ speaker.abstract }}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
