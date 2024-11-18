@@ -1,3 +1,4 @@
+---
 permalink: /winter-school-2024/
 layout: splash
 author_profile: false
